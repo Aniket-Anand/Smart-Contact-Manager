@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org" th:replace="normal/base::Layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <section >
+       
+        <div class="container">
+
+            <div class="card text-center">
+
+                <div class="card-body my-5">
+
+                    <img src="" style="height: 200px; width: 200px;" class="my_profile_picture" th:src="@{'/img/default.png'}" alt="profile photo">
+                
+
+                    <h1 class="text-center mt-3 text-secondary font-italic font-weight-Light">Start adding your contacts on cloud...</h1>
+
+                    <a th:href="@{/user/add-contact}" class="btn btn-primary btn-block text-uppercase mt-4">Add New Contact</a>
+                    
+                </div>
+
+               
+
+
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
